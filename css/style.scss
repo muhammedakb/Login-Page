@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-overflow-scrolling: touch;
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #e5e5e5;
+  width: 1300px;
+  height: 900px;
+  button {
+    cursor: pointer;
+  }
+  .card {
+    width: 1057px;
+    height: 708px;
+    margin-left: 146px;
+    margin-top: 96px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #6b9bd1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    .left-side {
+      position: absolute;
+      form {
+        margin-left: 89px;
+        margin-top: 64px;
+        .text-area {
+          h1 {
+            font-family: Rokkitt;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 41px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #161843;
+          }
+          p {
+            font-family: Mulish;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 339px;
+          }
+        }
+        .box-area {
+          margin-top: 52px;
+          .inputArea {
+            width: 430px;
+            height: 73px;
+            border: 1px solid #cad6e4;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 25px;
+          }
+          ::placeholder {
+            font-family: Mulish;
+            font-size: 18px;
+            color: #717a91;
+          }
+          .inputArea:focus {
+            border-color: #6b9bd1;
+            transition-duration: 1s;
+          }
+          .inputArea:focus::-webkit-input-placeholder {
+            transform: translateX(150%);
+            transition-duration: 2.5s;
+          }
+          .box-end {
+            margin-top: 16px;
+            a {
+              font-family: Mulish;
+              color: #0c6787;
+            }
+            a:hover {
+              color: #165369;
+            }
+            button {
+              background: #046586;
+              color: #ffffff;
+              width: 154px;
+              height: 73px;
+              border: 1px solid #000000;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 5px;
+              margin-left: 139px;
+              margin-top: 5px;
+              p {
+                position: absolute;
+                margin-left: 35px;
+                margin-top: 10px;
+                font-family: Mulish;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                letter-spacing: 1px;
+              }
+              img {
+                margin-left: 49px;
+                margin-top: 5px;
+              }
+            }
+            button:hover {
+              background: #10607a;
+            }
+          }
+          .hr-img {
+            margin-top: 55px;
+          }
+          .logWith {
+            font-family: Mulish;
+            color: #838a9e;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin-top: 35px;
+          }
+          .social {
+            margin-top: 30px;
+            button {
+              width: 207px;
+              height: 55px;
+              border: 1px solid #cad6e4;
+              background-color: #ffffff;
+              margin-right: 16px;
+              img {
+                margin-left: 45px;
+                margin-top: 10px;
+                margin-right: 45px;
+                margin-bottom: 10px;
+                width: 115px;
+                height: 35px;
+              }
+            }
+            button:hover {
+              border-color: #9eaab8;
+            }
+            button:nth-child(2) {
+              img {
+                width: 97px;
+              }
+            }
+          }
+          .signUp {
+            font-family: Mulish;
+            text-align: center;
+            margin-top: 60px;
+            color: #000000;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            a {
+              color: #046586;
+            }
+            a:hover {
+              color: #165369;
+            }
+          }
+        }
+      }
+    }
+
+    .right-side {
+      width: 449px;
+      height: 708px;
+      margin-left: 608px;
+      position: absolute;
+      border-radius: 0px 15px 15px 3px;
+      background: url("../img/rectangle.jpg");
+      .exitCircle {
+        height: 46px;
+        width: 46px;
+        border-radius: 23px;
+        background: #ffffff;
+        opacity: 0.7;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        img {
+          width: 28px;
+          height: 28px;
+          margin-left: 9px;
+          margin-top: 9px;
+        }
+      }
+      .exitCircle:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
